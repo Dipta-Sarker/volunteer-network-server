@@ -46,4 +46,4 @@ client.connect(err => {
 app.get('/', (req, res) => {
   res.send('I am a software engineer')
 })
-app.listen(5000)
+app.listen(process.env.PORT || 5000)
